@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="../ListaDeCompras/src/assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="containerPrincipal">
+      <header>
+        <h1>Lista de Compras</h1>
+        <p aria-hidden="true" id="description">
+          Digite abaixo sua necessidade de compra para adicionar à Lista
+        </p>
+      </header>
+      <form
+        class="form"
+        aria-label="Formulário para adicionar ítens a lista de compras."
+      >
+        <label for="input">Insira no campo o ítem a ser adicionado</label>
+        <input
+          type="text"
+          spellcheck="false"
+          id="input"
+          name="input"
+          placeholder="Digite aqui o ítem a ser adicionado"
+          aria-describedby="inputHelp"
+        />
+        <button type="submit" id="adiciona">Adicionar ítem à Lista</button>
+      </form>
+      <div class="listaDeCompras" aria-hidden="true"></div>
+    </main>
+    <script src="./src/assets/js/scripts.js"></script>
+  </body>
+</html>
