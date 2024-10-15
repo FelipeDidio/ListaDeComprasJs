@@ -29,7 +29,7 @@ body {
   &.active {
     height: 530px;
 
-    .qr-code {
+    .listaDeCompras {
       opacity: 1;
       pointer-events: auto;
       transition: opacity 0.5s 0.05s ease;
@@ -96,7 +96,7 @@ header {
     }
   }
 }
-.qr-code {
+.listaDeCompras {
   opacity: 0;
   display: flex;
   padding: 33px 0;
